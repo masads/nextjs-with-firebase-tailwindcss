@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+
+@layer components {
+  .btn-primary {
+      @apply bg-zinc-950 px-16 py-4 md:px-8 md:py-4 rounded-3xl text-white font-semibold hover:bg-zinc-800 transition duration-300;
+  }
+  .btn-danger {
+    @apply bg-red-600 px-16  py-4 md:px-8 md:py-4 rounded-3xl text-white font-semibold hover:bg-red-500 transition duration-300;
+}
+  .input{
+    @apply flex h-10 w-full md:w-[20rem] text-zinc-950 rounded-md border px-3 py-2 text-sm;
+  }
+}
